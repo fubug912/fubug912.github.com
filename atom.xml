@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>锦时</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-10-11T14:03:39.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>年少锦时</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建hexo博客-1</title>
+    <link href="http://yoursite.com/2016/07/30/2016-07-30-%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2-1/"/>
+    <id>http://yoursite.com/2016/07/30/2016-07-30-搭建hexo博客-1/</id>
+    <published>2016-07-30T12:02:26.000Z</published>
+    <updated>2016-10-11T14:03:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
+<p>其实这个博客已经搭建很久了,只是那段时间比较忙没有时间来管理这个博客也就什么都没有写.最近这段时间有些空闲了,我才想起这个博客,发现啥也没有,就想写一下东西了,不过本人现在就是一个小白啥都不会.想了好几天,才想出要写这篇文章,这篇文章也是本人第一次写的文章,有不对的地方望大神们指点!</p>
+<hr>
+<h1 id="我与hexo"><a href="#我与hexo" class="headerlink" title="我与hexo"></a>我与hexo</h1><hr>
+<p>我是在大概一年前的时候开始接触hexo的,当时,是因为脑袋不知道发啥神经想建个网站所以的开始了,先是开始接触Wordpress,后面发现配置太麻烦,开网站的时候加载又慢(服务器耗不起- -.),因为我是一个小白不会写主题,好看的主题又需要购买,所以就只好放弃了(其实是因为小白我是一个屌丝,穷买不起服务器和主题.土豪可以玩).后来就遇到我hexo.才发现有这么好的东西.下面来介绍下hexo的一些特点(个人认为,土豪,大神们勿喷)</p>
+<h3 id="加载速度快"><a href="#加载速度快" class="headerlink" title="加载速度快"></a>加载速度快</h3><p>因为hexo是基于Node.js.所以它加载比Wordpress快了不少.</p>
+<h3 id="支持Markdown"><a href="#支持Markdown" class="headerlink" title="支持Markdown"></a>支持Markdown</h3><p>是的.hexo支持Markdown,什么您不知道Markdown是什么?好吧,我告诉您这篇文章就是用这个写的.至于它的优点请去<a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">它的Wiki</a>上看吧.哦,国内可能访问不了,在这我给一个百度百科上的<a href="http://baike.baidu.com/link?url=8g9-ndVJUxI43a5QKKFfClQJpbMC3rlPQvEel16K1pDQcyr8H8PWSjptRiN9o2qYMUWZOjzMmx13Ekqb3G2T3a" target="_blank" rel="external">网址</a>不过还是有条件的朋友上Wiki看比较好.至于什么上我就不说了,懂的自然会懂,不懂就<a href="https://www.baidu.com/s?ie=utf-8&amp;f=8&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;wd=翻墙&amp;oq=翻墙&amp;rsv_pq=d2c1a29d0048ed39&amp;rsv_t=857a7jhuPB%2FV%2FAWsG3lwwvlSYxdyM6c1G7R4fC0FQQ%2B7EnAx1ulnplZ4RuE&amp;rqlang=cn&amp;rsv_enter=0" target="_blank" rel="external">….</a></p>
+<h3 id="简单"><a href="#简单" class="headerlink" title="简单"></a>简单</h3><p>简单,是因为它不需要购买服务器.甚至不需要购买域名(github上会提供免费的,当然会很长如果您不建议的话可以用.)不过还是推荐您购买个域名(毕竟现在域名也不贵多少了,万一那个域名变值钱了呢.哈哈哈),需要安装的东西也不多,不像Wordpress,不是搭建这个就是配置那个..麻烦.</p>
+<h3 id="强大的插件"><a href="#强大的插件" class="headerlink" title="强大的插件"></a>强大的插件</h3><p>hexo有着强大的插件系统,可以让其拥有强大的扩展性.</p>
+<h4 id="其实说这么多-总结起来就是-快速-简单-可扩展"><a href="#其实说这么多-总结起来就是-快速-简单-可扩展" class="headerlink" title="其实说这么多,总结起来就是:快速,简单,可扩展!"></a>其实说这么多,总结起来就是:快速,简单,可扩展!</h4><font color="#FFFFF" size="5">我不会告诉您我上面写的纯粹是为了凑够字数.233333</font>
+
+<hr>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><hr>
+<p>由于我现在用的是Mac系统所以我主要讲下Mac系统上的安装同时我也会讲一下Windows系统上的安装毕竟用的人比较多(其实我第一次安装hexo就是在win上安装’滑稽’)</p>
+<h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><p>在Mac系统上,需要以下工具:</p>
+<ol>
+<li>homebrew (可选)</li>
+<li>node.js</li>
+<li>npm (node.js已集成)</li>
+<li><p>hexo</p>
+<p>注意:node.js已经集成npm了,不需要重新安装npm了.</p>
+</li>
+</ol>
+<h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><p>在Mac下有几种方法,下面主要介绍两种.</p>
+<ol>
+<li>直接到<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载安装</li>
+<li>使用<code>brew</code>命令安装node.js</li>
+</ol>
+<p>因为使用<code>brew</code>安装,有可能失败(因为有墙).所以我推荐使用第一种方法.喜欢挑战的人也别担心,上面的两种方法我都会讲.</p>
+<h3 id="在官网下载node-js并安装"><a href="#在官网下载node-js并安装" class="headerlink" title="在官网下载node.js并安装"></a>在官网下载node.js并安装</h3><p>首先,先进入<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>(废话),看图</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/2016-08-02-01:14:44.jpg" alt=""></p>
+<p>这两个可以根据情况下载,下载完成后,打开安装就可以了,安装完成后会显示一些安装路径在上面我们就可以发现,它顺便帮你安装npm了.图我就不发了(懒),因为我已经安装过了.</p>
+<p>检测安装是否成功可以用下面的方法:</p>
+<p>打开你的终端(在应用列表里的其他目录上,我的在这里面不知道您们的是否一样找不到的话可以搜索),输入<code>node -v</code>并回车,你会看到如下:</p>
+<pre><code>➜  ~ node -v
+v6.3.0
+</code></pre><p>说明安装成功了,如果不是请重新试试或者试试下面的方法.</p>
+<h3 id="homebrew-brew-安装-node-js"><a href="#homebrew-brew-安装-node-js" class="headerlink" title="homebrew(brew) 安装 node.js"></a>homebrew(brew) 安装 node.js</h3><p>homebrew 是一个Mac osx 系统下的安装或卸载软件的软件.详细介绍请到<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">官网</a>查看.</p>
+<p>首先,先安装homebrew(又是废话).</p>
+<p>安装homebrew 很简单,只需要在终端上输入并回车下面的命令,等待完成就好了.</p>
+<pre><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><p>ps: 上面的命令是我写博客的时候(2016.8)放上去的不一定是最新的,一切已官网的命令为准,如果无法安装请到官网上去获取命令,在官网的<code>获取Homebrew</code>下面.</p>
+<p>安装完成后可以用<code>brew -v</code>命令检测安装是否成功,结果如下.</p>
+<pre><code>➜  ~ brew -v
+Homebrew 0.9.9 (git revision 0be20; last commit 2016-07-26)
+Homebrew/homebrew-core (git revision 4765b; last commit 2016-07-26)
+</code></pre><p>下面给出homebrew一些常用的命令</p>
+<pre><code>brew search wget    #搜索wget
+brew info wget      #显示wget的详细信息
+brew install wget   #安装wget
+brew unintsall wget #卸载wget
+brew list wget      #列出已安装的软件
+</code></pre><p>好了,下面开始用<code>brew</code>命令安装node.js.<br> 在终端输入<code>brew install node.js</code>并回车,等待命令执行完成,用<code>node -v</code>命令查看是否安装成功.</p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p> 可以进入<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">官网</a>点击文档查看详细的安装方法.</p>
+<p> 直接在终端上执行<code>npm install -g hexo-cli</code> 即可完成安装.如果失败,请尝试安装 Xcode,在App Store中搜索Xcode点击安装.安装完成后启动并进入<code>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</code> 安装命令行工具,然后在命令行再执行<code>npm install -g hexo-cli</code>.</p>
+<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h3><p> 搭建本地博客很简单只需要依次在终端输入以下命令即可.</p>
+<pre><code>hexo init ~/blog #初始化. 这个目录(~/blog)可以自行修改,这个是您博客的目录
+cd ~/blog        #进入博客目录
+npm install      #安装
+</code></pre><p>安装完后在安装目录如下</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+</code></pre><p>详细安装教程和目录详解请看<a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">官网</a>进入<code>文档 &gt; 建站</code>查看</p>
+<hr>
+<h2 id="windows-上的环境搭建"><a href="#windows-上的环境搭建" class="headerlink" title="windows 上的环境搭建"></a>windows 上的环境搭建</h2><hr>
+<p>在Windows上安装hexo您需要一下工具:</p>
+<ol>
+<li>Node.js</li>
+<li>Git</li>
+</ol>
+<h3 id="Node-js的安装"><a href="#Node-js的安装" class="headerlink" title="Node.js的安装"></a>Node.js的安装</h3><p>进入<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载Node.js安装文件,根据自己的Windows版本下载安装文件,在<code>我的电脑点右键 &gt; 属性</code>就可以看见自己的Windows版本是32还是64了.一般下载稳定的版本(那就是有LTS的那个)<br><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-22:01:46.jpg" alt=""><br>下载完成后打开,一路点击Next(下一步)就可以了.</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-22:32:22.jpg" alt=""></p>
+<p>然后就可以检查一下是不是安装好了,首先按下<code>Win + R</code>打开运行窗口:</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-22:45:32.jpg" alt=""></p>
+<p>输入<code>cmd</code>并回车打开命令行窗口,在命令行中分别输入<code>node -v</code>和<code>npm -v</code>出现如下</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-sp160803_225801.png" alt=""></p>
+<p>就安装成功了.</p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>首先进入<a href="https://github.com/git-for-windows/git/releases" target="_blank" rel="external">这里</a>,然后找到<code>Download</code>这里下载对应自己Windows版本的安装文件(注意:下载的安装包是后缀为exe的,不要下错!!).然后安装,点下一步,点到如下图的位置是注意看看是否一样.剩下的全部默认,一直点下一步.</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-sp160803_231203.png" alt=""></p>
+<pre><code>这里是上图的解释,可以不看.
+Git的默认设置下，出于安全考虑，只有在Git Bash中才能进行Git的相关操作。
+按照上图进行的选择，将会使得Git安装程序在系统环境中加入Git的相关路径，使得你可以在CMD界面下调用Git，
+不用打开Git Bash了。
+</code></pre><p>安装完后在命令行中输入<code>git --version</code>并回车查看是否安装成功.</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-03-sp160803_231914.png" alt=""></p>
+<p>如上图所示就安装成功了.</p>
+<h3 id="安装hexo并搭建博客"><a href="#安装hexo并搭建博客" class="headerlink" title="安装hexo并搭建博客"></a>安装hexo并搭建博客</h3><p>在自己认为合适创建博客的地方新建个文件夹.然后,在文件夹上<code>右键 &gt; Git Bash Here</code>也可以在文件夹上按<code>shift + 右键</code>点击<code>在此处打开命令窗口</code>.然后输入<code>npm install hexo-cli -g</code>并回车,如下图</p>
+<p>Git Bash Here</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_001843.png" alt=""></p>
+<p>命令行</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_004919.png" alt=""></p>
+<p>然后输入<code>npm install hexo --save</code>并回车如下.</p>
+<p>Git Bash Here</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_002914.png" alt=""></p>
+<p>命令行</p>
+<p>1<a href="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_005345.png" target="_blank" rel="external"></a></p>
+<p>输入<code>hexo -v</code>并回车查看是否安装成功</p>
+<p>Git Bash Here</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_003017.png" alt=""></p>
+<p>命令行</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_005345.png" alt=""></p>
+<p>如上图说明安装成功.</p>
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><p>在命令行或Git Bash上输入<code>hexo init</code>并回车,如图.</p>
+<p>Git Bash Here</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_003732.png" alt=""></p>
+<p>命令行</p>
+<p><img src="http://o89a3dml5.bkt.clouddn.com/blog/2016-08-04-sp160804_005716.png" alt=""></p>
+<p> 安装完后在安装目录如下</p>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+</code></pre><p>详细安装教程和目录详解请看<a href="https://hexo.io/zh-cn/docs" target="_blank" rel="external">官网</a>进入<code>文档 &gt; 建站</code>查看</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>Linux系统上我就不详细讲了,使用Linux的一般都已经是大神了,可以查看<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">官网</a><code>文档 &gt; 开始使用</code>里的教程搭建就OK了,下面引用了<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网的内容</a></p>
+<blockquote>
+<p>####安装 Git</p>
+<p>Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code></p>
+<p>Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code></p>
+<p>####安装 Node.js</p>
+<p>安装 Node.js 的最佳方式是使用 nvm。</p>
+<p>cURL:</p>
+<p><code>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</code></p>
+<p>Wget:</p>
+<p><code>$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</code></p>
+<p>安装完成后,重启终端并执行下列命令即可安装 Node.js.</p>
+<p><code>$ nvm install stable</code></p>
+<p>或者您也可以下载<a href="https://nodejs.org/en/" target="_blank" rel="external">安装程序</a>来安装。</p>
+<h4 id="安装hexo-1"><a href="#安装hexo-1" class="headerlink" title="安装hexo"></a>安装hexo</h4><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<p><code>$ npm install -g hexo-cli</code></p>
+</blockquote>
+<p>按照上面的就可以安装成功了.</p>
+<hr>
+<h1 id="放在最后的一些话"><a href="#放在最后的一些话" class="headerlink" title="放在最后的一些话"></a>放在最后的一些话</h1><p>好了,搭建hexo的第一部分就到这里了,如果您觉得我写得不错,请多多支持我.如果,觉得我写得不啥的,请您谅解,毕竟这篇文章是我的第一个作品,如有不好的地方请大家多多指点,欢迎大家联系我<a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x72;&#x65;&#x65;&#112;&#x72;&#119;&#x39;&#56;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#x6f;&#x6d;">&#x63;&#x72;&#x65;&#x65;&#112;&#x72;&#119;&#x39;&#56;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#x6f;&#x6d;</a>和我一起导论问题.下次再教大家如何部署到github或coding上,同时注册github帐号和绑定自己的域名.</p>
+<p>8月4号:更新,由于我在写第二章是加入了Windows下的环境搭建后发现和本章不好接下去只好将Windows搭建环境这部分添加到本章,将注册github帐号这个部分移到下一章,重新排版,如有对你产生不便的地方请谅解.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;其实这个博客已经搭建很久了,只是那段时间比较忙没有时间来管理这个博客也就什么都没有写.最近这段时间有些空闲了,我才想起这个博客,发
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="搭建" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
