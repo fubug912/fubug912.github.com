@@ -299,10 +299,10 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap"><article id="post-2016-07-30-搭建hexo博客-1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-搭建hexo博客-1" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/30/2016-07-30-搭建hexo博客-1/" class="article-date">
+      <a href="/2016/07/30/搭建hexo博客-1/" class="article-date">
       <time datetime="2016-07-30T12:02:26.000Z" itemprop="datePublished">2016-07-30</time>
 </a>
     </div>
@@ -314,7 +314,7 @@
     
       <header class="article-header">
         <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/30/2016-07-30-搭建hexo博客-1/">搭建hexo博客-1</a>
+      <a class="article-title" href="/2016/07/30/搭建hexo博客-1/">搭建hexo博客-1</a>
     </h1>
       </header>
       
@@ -464,9 +464,8 @@ Git的默认设置下，出于安全考虑，只有在Git Bash中才能进行Git
 </blockquote>
 <p>按照上面的就可以安装成功了.</p>
 <hr>
-<h1 id="放在最后的一些话"><a href="#放在最后的一些话" class="headerlink" title="放在最后的一些话"></a>放在最后的一些话</h1><p>好了,搭建hexo的第一部分就到这里了,如果您觉得我写得不错,请多多支持我.如果,觉得我写得不啥的,请您谅解,毕竟这篇文章是我的第一个作品,如有不好的地方请大家多多指点,欢迎大家联系我<a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x72;&#x65;&#x65;&#112;&#x72;&#119;&#x39;&#56;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#x6f;&#x6d;">&#x63;&#x72;&#x65;&#x65;&#112;&#x72;&#119;&#x39;&#56;&#x40;&#111;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#46;&#x63;&#x6f;&#x6d;</a>和我一起导论问题.下次再教大家如何部署到github或coding上,同时注册github帐号和绑定自己的域名.</p>
+<h1 id="放在最后的一些话"><a href="#放在最后的一些话" class="headerlink" title="放在最后的一些话"></a>放在最后的一些话</h1><p>好了,搭建hexo的第一部分就到这里了,如果您觉得我写得不错,请多多支持我.如果,觉得我写得不啥的,请您谅解,毕竟这篇文章是我的第一个作品,如有不好的地方请大家多多指点,欢迎大家联系我<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x63;&#x72;&#101;&#101;&#x70;&#x72;&#x77;&#x39;&#56;&#x40;&#111;&#x75;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#x6d;">&#x63;&#x72;&#101;&#101;&#x70;&#x72;&#x77;&#x39;&#56;&#x40;&#111;&#x75;&#116;&#108;&#x6f;&#111;&#x6b;&#46;&#x63;&#x6f;&#x6d;</a>和我一起导论问题.下次再教大家如何部署到github或coding上,同时注册github帐号和绑定自己的域名.</p>
 <p>8月4号:更新,由于我在写第二章是加入了Windows下的环境搭建后发现和本章不好接下去只好将Windows搭建环境这部分添加到本章,将注册github帐号这个部分移到下一章,重新排版,如有对你产生不便的地方请谅解.</p>
-
       
     </div>
     
@@ -549,7 +548,22 @@ Git的默认设置下，出于安全考虑，只有在Git Bash中才能进行Git
         }
     
 </script>
-
+<script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>

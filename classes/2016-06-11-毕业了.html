@@ -346,7 +346,6 @@
           
         <h2 id="我们毕业了"><a href="#我们毕业了" class="headerlink" title="我们毕业了"></a>我们毕业了</h2><p>&emsp;&emsp;转眼就过了三年了.我们毕业了,在这三年里,我学到了挺多.认识了许多朋友,在这所学校里我们度(熬)过了三年’滑稽’,在这三年里我们有欢乐也有悲伤不过现在终于毕业了.哈哈…</p>
 <p>#####再见了同学们 朋友们</p>
-
       
     </div>
     
@@ -465,7 +464,22 @@
         }
     
 </script>
-
+<script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>

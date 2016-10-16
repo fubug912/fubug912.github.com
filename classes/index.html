@@ -345,7 +345,6 @@
           
         <h1 id="251"><a href="#251" class="headerlink" title="251"></a>251</h1><pre><code>壮哉我大**318**
 </code></pre><p><img src="http://o89a3dml5.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160604232228.gif" alt=" "></p>
-
       
     </div>
     
@@ -464,7 +463,22 @@
         }
     
 </script>
-
+<script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>

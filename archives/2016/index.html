@@ -304,12 +304,12 @@
   <div class="archive-article-inner">
     <header class="archive-article-header">
           <div class="article-meta">
-              <a href="/2016/07/30/2016-07-30-搭建hexo博客-1/" class="archive-article-date">
+              <a href="/2016/07/30/搭建hexo博客-1/" class="archive-article-date">
       <time datetime="2016-07-30T12:02:26.000Z" itemprop="datePublished">07-30</time>
 </a>
         </div>
          <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/30/2016-07-30-搭建hexo博客-1/">搭建hexo博客-1</a>
+      <a class="archive-article-title" href="/2016/07/30/搭建hexo博客-1/">搭建hexo博客-1</a>
     </h1>
         <div class="article-info info-on-archive">
           <div class="article-category tagcloud">
@@ -390,7 +390,22 @@
         }
     
 </script>
-
+<script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>
